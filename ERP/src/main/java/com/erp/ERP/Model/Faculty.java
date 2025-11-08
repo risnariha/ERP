@@ -1,4 +1,4 @@
-package com.erp.ERP.Model.Faculty;
+package com.erp.ERP.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
