@@ -12,7 +12,39 @@ public class Fees {
     private Long id;
     private Double amount;
     private String status; // e.g., 'Paid', 'Unpaid'
-    // Add relationships (e.g., student), due date
 
-    // Constructors, getters, setters
+    // Default constructor
+    public Fees() {}
+
+    // Constructor with fields
+    public Fees(Double amount, String status) {
+        this.amount = amount;
+        this.status = status;
+    }
+
+    // Getters
+    public Long getId() {
+        return id;
+    }
+
+    public Double getAmount() {
+        return amount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    // Setters
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
