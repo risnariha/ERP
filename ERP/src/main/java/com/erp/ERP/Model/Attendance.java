@@ -1,4 +1,4 @@
-package com.erp.ERP.model.attendance;
+package com.erp.ERP.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
