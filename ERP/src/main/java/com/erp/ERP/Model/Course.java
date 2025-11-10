@@ -10,10 +10,34 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
+    private String code;
     private String description;
-    // Add relationships, credits, etc.
+    private Integer credits;
 
-    // Constructors, getters, setters
+    // Default constructor
+    public Course() {}
+
+    // Constructor with fields
+    public Course(String name, String code, String description, Integer credits) {
+        this.name = name;
+        this.code = code;
+        this.description = description;
+        this.credits = credits;
+    }
+
+    // Getters
+    public Long getId() { return id; }
+    public String getName() { return name; }
+    public String getCode() { return code; }
+    public String getDescription() { return description; }
+    public Integer getCredits() { return credits; }
+
+    // Setters
+    public void setId(Long id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setCode(String code) { this.code = code; }
+    public void setDescription(String description) { this.description = description; }
+    public void setCredits(Integer credits) { this.credits = credits; }
 }
-
