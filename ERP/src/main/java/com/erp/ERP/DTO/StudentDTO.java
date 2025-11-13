@@ -1,6 +1,6 @@
 package com.erp.ERP.DTO;
 
-public class StuentDTO {
+public class StudentDTO {
     private Long id;
     private String name;
     private String email;
