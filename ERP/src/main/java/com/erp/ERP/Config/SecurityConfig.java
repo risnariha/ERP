@@ -1,15 +1,15 @@
 package com.erp.ERP.Config;
 
 import com.erp.ERP.Security.JwtAuthFilter;
-import com.erp.ERP.Security.AuthService;
+import com.erp.ERP.Service.AuthService;
 import org.springframework.context.annotation.Bean;
-import org.springframework.Security.authentication.AuthenticationManager;
-import org.springframework.Security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.Security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.Security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.Security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.Security.crypto.password.PasswordEncoder;
-import org.springframework.Security.web.SecurityFilterChain;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 
 @EnableWebSecurity
 public class SecurityConfig {
