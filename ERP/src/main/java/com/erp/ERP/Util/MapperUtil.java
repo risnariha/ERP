@@ -1,10 +1,13 @@
 package com.erp.ERP.Util;
 
-
 import com.erp.ERP.Model.Student;
 import com.erp.ERP.DTO.StudentDTO;
 import com.erp.ERP.Model.User;
 import com.erp.ERP.DTO.UserDTO;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Arrays;
 
 public class MapperUtil {
 
@@ -40,8 +43,14 @@ public class MapperUtil {
         dto.setId(user.getId());
         dto.setUsername(user.getUsername());
         dto.setEmail(user.getEmail());
-        // Do not set password or sensitive values in DTO!
-        dto.setRoles(user.getRoles());
+
+        // If roles are comma-separated String, split to List
+        if (user.getRoles() != null) {
+            List<String> rolesList = Arrays.asList(user.getRoles().split(","));
+            dto.setRoles(rolesList);
+        } else {
+            dto.setRoles(Collections.emptyList());
+        }
         return dto;
     }
 
@@ -51,8 +60,15 @@ public class MapperUtil {
         user.setId(dto.getId());
         user.setUsername(dto.getUsername());
         user.setEmail(dto.getEmail());
-        // Set password only if present and needed for registration
-        user.setRoles(dto.getRoles());
+
+        // Convert List<String> to comma-separated String
+        if (dto.getRoles() != null && !dto.getRoles().isEmpty()) {
+            String rolesStr = String.join(",", dto.getRoles());
+            user.setRoles(rolesStr);
+        } else {
+            user.setRoles("");
+            user.setRoles("");
+        }
         return user;
     }
 }
