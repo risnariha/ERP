@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+h1, h2 {
+    color: #004d80;
+}
+form {
+    margin-top: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+input {
+    padding: .3rem;
+    margin-left: .5rem;
+}
+button {
+    margin-top: 1rem;
+    padding: .5rem 1.5rem;
+}
