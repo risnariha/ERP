@@ -2,9 +2,10 @@ package com.erp.ERP.Service;
 
 import com.erp.ERP.Model.User;
 import com.erp.ERP.Repository.UserRepo;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-import org.springframework.security.core.userdetails.UserDetailsService;
+
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
