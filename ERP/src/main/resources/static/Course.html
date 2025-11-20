@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Course List</h1>
+<table border="1" id="coursesTable">
+    <thead>
+    <tr>
+        <th>ID</th><th>Name</th><th>Description</th><th>Faculty</th><th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<h2>Add Course</h2>
+<form id="addCourseForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="description" placeholder="Description" required>
+    <input type="text" id="faculty" placeholder="Faculty" required>
+    <button type="submit">Add Course</button>
+</form>
+<p id="courseError" style="color:red"></p>
+<script src="js/courses.js"></script>
+</body>
+</html>
