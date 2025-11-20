@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Attendance Records</h1>
+<table border="1" id="attendanceTable">
+    <thead>
+    <tr>
+        <th>ID</th><th>Student</th><th>Date</th><th>Status</th><th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<h2>Add Attendance</h2>
+<form id="addAttendanceForm">
+    <input type="text" id="studentId" placeholder="Student ID" required>
+    <input type="date" id="date" required>
+    <input type="text" id="status" placeholder="Status" required>
+    <button type="submit">Add Attendance</button>
+</form>
+<p id="attendanceError" style="color:red"></p>
+<script src="js/attendance.js"></script>
+</body>
+</html>
