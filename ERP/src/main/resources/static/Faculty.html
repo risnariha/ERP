@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Faculty List</h1>
+<table border="1" id="facultyTable">
+    <thead>
+    <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Department</th><th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<h2>Add Faculty</h2>
+<form id="addFacultyForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="department" placeholder="Department" required>
+    <button type="submit">Add Faculty</button>
+</form>
+<p id="facultyError" style="color:red"></p>
+<script src="js/faculty.js"></script>
+</body>
+</html>
