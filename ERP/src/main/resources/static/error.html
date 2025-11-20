@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Error Occurred</h1>
+<p id="errorMsg"></p>
+<script>
+    document.getElementById('errorMsg').innerText =
+        new URLSearchParams(window.location.search).get('msg') || 'Unknown error.';
+</script>
+</body>
+</html>
