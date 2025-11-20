@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ERP Dashboard</title>
+    <title>Student Management</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Dashboard</h1>
-<nav>
-    <a href="students.html">Students</a>
-    <a href="users.html">Users</a>
-    <a href="timetable.html">Timetable</a>
-    <a href="login.html" onclick="logout()">Logout</a>
-</nav>
-<div id="welcome"></div>
-<script src="js/dashboard.js"></script>
+<h1>Student List</h1>
+<table border="1" id="studentsTable">
+    <thead>
+    <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Department</th><th>Year</th><th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<h2>Add Student</h2>
+<form id="addStudentForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="department" placeholder="Department" required>
+    <input type="number" id="year" placeholder="Year" min="1" max="4" required>
+    <button type="submit">Add Student</button>
+</form>
+<p id="studentError" style="color:red"></p>
+<script src="js/students.js"></script>
 </body>
 </html>
