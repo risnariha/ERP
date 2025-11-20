@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fees Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Student Fees</h1>
+<table border="1" id="feesTable">
+    <thead>
+    <tr>
+        <th>ID</th><th>Student</th><th>Amount</th><th>Status</th><th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<h2>Add Fee</h2>
+<form id="addFeeForm">
+    <input type="text" id="studentId" placeholder="Student ID" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="status" placeholder="Status" required>
+    <button type="submit">Add Fee</button>
+</form>
+<p id="feeError" style="color:red"></p>
+<script src="js/fees.js"></script>
+</body>
+</html>
+>
