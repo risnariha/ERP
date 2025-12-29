@@ -37,7 +37,6 @@ public class FacultyController {
     public Faculty updateFaculty(@PathVariable Long id, @RequestBody Faculty faculty) {
         return facultyService.updateFaculty(id, faculty);
     }
-
     @DeleteMapping("/{id}")
     public void deleteFaculty(@PathVariable Long id) {
         facultyService.deleteFaculty(id);
